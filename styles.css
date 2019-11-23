@@ -157,6 +157,7 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .section-heading {
@@ -178,12 +179,12 @@ section {
 
 #section-source p {
     padding: 8px;
-    text-align: center;
+    text-align: left;
 }
 
 #section-source a {
     margin: 8px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Card */
@@ -198,16 +199,17 @@ section {
     transition: 0.4s;
 }
 
-.card-image:hover {
-    box-shadow: 0 10px 6px -6px #777;
-}
-
 .card .card-description {
     padding: 0 8px;
+    text-align: left;
 }
 
 .card-meta-blogpost a {
     color: #333;
+}
+
+.project-links{
+    text-align: center;
 }
 
 /* Button Read more */
@@ -421,4 +423,8 @@ footer #social-media-footer ul li:hover a .fa-github {
     main {
         width: 85%;
     }
+}
+
+#about{
+    margin-bottom: 0;
 }
