@@ -180,6 +180,7 @@ section {
 #section-source p {
     padding: 8px;
     text-align: left;
+    margin: 0 75px;
 }
 
 #section-source a {
@@ -425,6 +426,6 @@ footer #social-media-footer ul li:hover a .fa-github {
     }
 }
 
-#about{
+#About{
     margin-bottom: 0;
 }
