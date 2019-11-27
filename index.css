@@ -204,12 +204,6 @@ li {
         font-size: 5vw;
     }
 
-    hr {
-        width: 90%;
-        border: 2px solid white;
-        border-radius: 5px;
-    }
-
     /* About */
     .about {
         width: 70%;
@@ -240,28 +234,9 @@ li {
         margin-left: 36%;
     }
 
-    .project {
-        flex: 0 0 100%;
-        margin: 10px 0 0 0;
-        color: white;
-        margin-bottom: 50px;
-    }
-
     .project .project-text {
         font-size: 3vw;
         line-height: 1.3em;
-    }
-
-    .project-links > a {
-        width: 100%;
-        display: inline-block;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 2em;
-        text-decoration: none;
-        font-weight: 300;
-        color: #ffffff;
-        background-color: #a8373a;
-        text-align: center;
     }
 }
 
@@ -318,27 +293,9 @@ li {
         margin-left: 36%;
     }
 
-    .project {
-        flex: 0 0 100%;
-        margin: 10px 0 0 0;
-        margin-bottom: 50px;
-    }
-
     .project .project-text {
         font-size: 3vw;
         line-height: 1.1em;
-    }
-
-    .project-links > a {
-        width: 100%;
-        display: inline-block;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 2em;
-        text-decoration: none;
-        font-weight: 300;
-        color: #ffffff;
-        background-color: #a8373a;
-        text-align: center;
     }
 }
 
@@ -375,8 +332,6 @@ li {
     }
 
     .about > p {
-        color: white;
-        text-align: left;
         font-size: 2vw;
         line-height: 1.1em;
     }
@@ -385,12 +340,6 @@ li {
     .preferred-tools {
         width: 40%;
         margin: 100px 30% 0 30%;
-    }
-
-    .preferred-tools > hr {
-        width: 100%;
-        border: 1px solid white;
-        border-radius: 5px;
     }
 
     li {
@@ -409,25 +358,10 @@ li {
 
     .project {
         flex: 0 0 45%;
-        margin: 10px 0 0 0;
-        color: white;
-        margin-bottom: 50px;
     }
 
     .project .project-text {
         font-size: 2vw;
         line-height: 1.1em;
-    }
-
-    .project-links > a {
-        width: 100%;
-        display: inline-block;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 2em;
-        text-decoration: none;
-        font-weight: 300;
-        color: #ffffff;
-        background-color: #a8373a;
-        text-align: center;
     }
 }
