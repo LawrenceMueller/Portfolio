@@ -1,190 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="normalize.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Lawrence Mueller</title>
-        <script src="https://kit.fontawesome.com/0ccb9b2905.js"></script>
+        <title>Lawrence Mueller Portfolio</title>
         <link
-            href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
             rel="stylesheet"
         />
+
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <section class="icon-bar">
-            <a id="github" href="https://github.com/Amalazing" target="_blank"
-                ><i class="fab fa-github"></i
-            ></a>
-            <a
-                id="linkedIn"
-                href="https://www.linkedin.com/in/lawrence-mueller/"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-                id="resume"
-                href="https://www.slideshare.net/slideshow/embed_code/key/nGUCjU1Ac7j6gI"
-                target="_blank"
-                ><i class="far fa-file"></i
-            ></a>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">My Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">My Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Lawrence Mueller</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+                Web Developer
+            </p>
+            <img
+                src="img/lawrence1.jpg"
+                alt="a picture of Jane Smith smiling"
+                class="intro__img"
+            />
         </section>
-        <div class="hero-container">
-            <div class="title">
-                <h1 class="shadow">Lawrence Mueller</h1>
-                <h2 class="shadow">&lt;Web Developer/&gt;</h2>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Full Stack</h3>
+                    <p>
+                        I enjoy working both the front and backend of the
+                        application. Working out bugs on the front end whether
+                        it be with styling, asynchronous code, or state managment
+                        is fun for me; plus I love seeing the result visually.
+                        While making the functionality of the application
+                        actually work by validating data, setting up routes, or
+                        managing a database is always interesting to me and I
+                        find a great deal of satisfaction when it all works
+                        properly.
+                    </p>
+                </div>
+                <!-- / service -->
+
+                <div class="service">
+                    <h3>Tools I Use</h3>
+                    <p>
+                        Personally I am partial to using the MERN stack. That
+                        means MongoDB, Node with Express, and React. These are
+                        simply my go to tools of choice when creating a web
+                        application. I find them simple and effective. For
+                        hosting I use both Heroku and AWS. I feel that AWS is a
+                        simpler option because it offers not only a DNS service
+                        via Route 53 but also acts as a Domain Registar. This
+                        means you can buy and route your Hostname all in one
+                        place.
+                    </p>
+                </div>
+                <!-- / service -->
+
+                <div class="service">
+                    <h3>Learning</h3>
+                    <p>
+                        Since I am young, I know that I have a long way to go
+                        as a developer. I love learning and am always excited to
+                        pick up a new technology and develop with it. So besides
+                        just designing and making web applications in the stack
+                        I am comfortable with, I am always open to learning new
+                        skills to make me an even better developer.
+                    </p>
+                </div>
+                <!-- / service -->
             </div>
-        </div>
-        <hr />
-        <section class="about">
-            <h2 class="shadow">About</h2>
-            <hr />
-            <p>
-                Hi, my name is Lawrence Mueller. I create websites and love
-                learning. My passion is full stack development. There is
-                something about building a project from start to finish that
-                feels rewarding. Besides web development, I am passionate about
-                working towards a sustainable future. One day I want to use my
-                skills as a full stack developer to help create a more
-                sustainable future. In my spare time I like to sing, play old
-                games, learn new technologies, and go out with my friends. Nice
-                to meet you!
-            </p>
-            <p>
-                <strong>TL;DR:</strong>
-            </p>
-            <p>
-                I make websites
-            </p>
+            <!-- / services -->
+
+            <a href="#work" class="btn">My Work</a>
         </section>
-        <section class="preferred-tools">
-            <h2 class="shadow">Preferred Tools</h2>
-            <hr />
-            <ul>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Mongo</li>
-                <li>JavaScript</li>
-                <li>SASS</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>GitHub</li>
-                <li>AWS</li>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">
+                Web developer based out of Pomona.
+            </p>
+
+            <div class="about-me__body">
+                <p>
+                    Graduated from California State University Long Beach with a
+                    Bachelors of Computer Science. From there I started to teach
+                    myself modern web technogolies such as React, Node,
+                    MongoDB, AWS and more. Mainly I would watch YouTube
+                    tutorials, read medium articles, and use online learning
+                    sites like Udemy. After I got to a level with those
+                    technologies that I would call proficient, I started to build
+                    projects in my free time and post them on my GitHub.
+                </p>
+                <p>
+                    Beyond just web development I have many other hobbies. Since
+                    I am a huge nerd, I play Dungeons and Dragons with my friends
+                    weekly. I also love music and sing in my spare time. My
+                    other passion is sustainability. I believe that the climate
+                    crisis is the largest problem our planet is facing at the
+                    moment and I would love to find a way to use my skills as a
+                    programmer in order to help towards that effort.
+                </p>
+            </div>
+
+            <img
+                src="img/lawrence2.jpg"
+                alt="Jane leaning against a bus"
+                class="about-me__img"
+            />
+        </section>
+
+        <!-- Projects -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Projects</h2>
+            <p class="section__subtitle section__subtitle--work">
+                A few off of my GitHub
+            </p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="messenger-service.html" class="portfolio__item">
+                    <img
+                        src="img/MessageService1.png"
+                        alt="picture of my messenger service project"
+                        class="portfolio__img"
+                    />
+                </a>
+
+                <!-- Portfolio item 02 -->
+                <a href="react-quiz.html" class="portfolio__item">
+                    <img
+                        src="img/Quiz1.PNG"
+                        alt="picture of my React Quiz project"
+                        class="portfolio__img"
+                    />
+                </a>
+
+                <!-- Portfolio item 03 -->
+                <a href="work-flow.html" class="portfolio__item">
+                    <img
+                        src="img/WorkFlow1.png"
+                        alt="picture of my Work Flow project"
+                        class="portfolio__img"
+                    />
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="lawrencemueller18@gmail.com" class="footer__link"
+                >lawrencemueller18@gmail.com</a
+            >
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a
+                        class="social-list__link"
+                        href="https://github.com/Amalazing"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a
+                        class="social-list__link"
+                        href="https://www.linkedin.com/in/lawrence-mueller/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a
+                        class="social-list__link"
+                        href="https://www.slideshare.net/slideshow/embed_code/key/nGUCjU1Ac7j6gI"
+                        target="_blank"
+                    >
+                        <i class="far fa-file"></i>
+                    </a>
+                </li>
             </ul>
-        </section>
-        <section class="projects">
-            <h2 class="shadow">Projects</h2>
-            <hr />
-            <article class="project">
-                <img
-                    src="./img/MessageService.PNG"
-                    alt="Home screen of Messaging Service Project"
-                />
-                <div class="project-text">
-                    <h3>Messaging Service</h3>
-                    <p>
-                        A full stack web service that sends users messages every
-                        day via email. The project was built using the MERN
-                        stack and is complete with payment processing via
-                        Stripe. I utilize the Mongo database to store and access
-                        stored user information. The Node REST webserver
-                        schedules emails to be sent and handles user information
-                        sent from the front end by validating it. I planned,
-                        developed, produced, and am now maintaining this
-                        project. I am very proud of it. Feel free to check out
-                        the site itself by using the link below, or watch the
-                        video to see it in action. The video is from an earlier
-                        version of the website that sent messages via SMS
-                        however the concepts are the same.
-                    </p>
-                    <div class="project-links">
-                        <a
-                            href="http://www.lgbtthroughhistory.com/"
-                            class="btn"
-                            target="_blank"
-                            >Visit Site</a
-                        >
-                        <a
-                            href="https://vimeo.com/373951787"
-                            class="btn"
-                            target="_blank"
-                            >Watch Video</a
-                        >
-                        <a
-                            href="https://github.com/Amalazing/Message-Service"
-                            class="btn"
-                            target="_blank"
-                            >Visit Code</a
-                        >
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <img
-                    src="./img/Quiz.PNG"
-                    alt="Home screen of Exercise Tracker Project"
-                />
-                <div class="project-text">
-                    <h3>React Quiz</h3>
-                    <p>
-                        This is a Quiz Web application I decided to make using
-                        React. The concept is simple enough; test yourself in
-                        three categories: science, history, and art. I hosted it
-                        using GitHub pages and used some simple animations to
-                        give it some flair. Visit the site by following the link
-                        and see how high you can score.
-                    </p>
-                    <div class="project-links">
-                        <a
-                            href="https://amalazing.github.io/React-Quiz/"
-                            class="btn"
-                            target="_blank"
-                            >Visit Site</a
-                        >
-                        <a
-                            href="https://github.com/Amalazing/React-Quiz"
-                            class="btn"
-                            target="_blank"
-                            >Visit Code</a
-                        >
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <img
-                    src="./img/WorkFlow.png"
-                    alt="Home screen of WorkFlow Project"
-                />
-                <div class="project-text">
-                    <h3>Workflow</h3>
-                    <p>
-                        A full stack web application based off of a Youtube
-                        tutorial. The front end uses React, Redux and React
-                        Router. The backend uses Firebase. The web application
-                        is a way for multiple people to post projects to be seen
-                        by all users. It is complete with login/signup,
-                        authentication, cloud functions, storing all data in a
-                        database, and live notifications. It is super Mario
-                        themed. Feel free to make an account or use the
-                        credentials: mario@test.com and test1234 to login.
-                    </p>
-                    <div class="project-links">
-                        <a
-                            href="https://work-flow-web-app.firebaseapp.com/"
-                            class="btn"
-                            target="_blank"
-                            >Visit Site</a
-                        >
-                        <a
-                            href="https://github.com/Amalazing/Work-Flow"
-                            class="btn"
-                            target="_blank"
-                            >Visit Code</a
-                        >
-                    </div>
-                </div>
-            </article>
-        </section>
+        </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>
