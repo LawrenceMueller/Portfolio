@@ -52,7 +52,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 0px 3em 5em 3em;
 }
 
 img {
@@ -136,7 +136,11 @@ h3 {
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+}
+
+.section__title--skills {
+   text-align: center;
+   margin-bottom: .5em;
 }
 
 /* header */
@@ -288,53 +292,112 @@ header {
     }
 }
 
-/*  My services section  */
+/*  My Skills section  */
 
-.my-services {
-    background-color: var(--clr-dark);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url(../img/services-bg.jpg);
-    background-size: cover;
-    /*background-blend-mode: multiply;*/
-    color: var(--clr-light);
-    text-align: center;
-}
+/* Float four columns side by side */
+.column {
+   float: left;
+   width: 25%;
+   padding: 0 10px;
+ }
+ 
+ /* Remove extra left and right margins, due to padding */
+ .row {margin: 0 -5px;}
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
 
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-}
+ .skills--img {
+   height: 250px;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   margin-bottom: 1em;
+ }
 
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
+ .js{
+   background-image: url("../img/javascript-badge.jpg");
+ }
 
-.services {
-    margin-bottom: 4em;
-}
+ .react{
+   background-image: url("../img/react-badge2.png");
+ }
 
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-}
+ .node{
+   background-image: url("../img/node-badge.jpg");
+ }
 
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+ .mongo{
+   background-image: url("../img/mongo-badge.jpg");
+ }
+
+ .aws{
+   background-image: url("../img/AWS-badge.png");
+ }
+
+ .css{
+   background-image: url("../img/CSS-badge.png");
+ }
+
+ .html{
+   background-image: url("../img/HTML-badge.png");
+ }
+
+ .github{
+   background-image: url("../img/github-badge2.png");
+ }
+
+  /* Style the counter cards */
+  .card {
+   padding: 16px;
+   text-align: center;
+   margin-bottom: 1em;
+ }
+ 
+ /* Responsive columns */
+
+ @media screen and (max-width: 1160px) {
+   .column {
+     width: 33%;
+   }
+
+   .skills--img {
+      height: 220px;
     }
+ }
 
-    .service + .service {
-        margin-left: 2em;
+ @media screen and (max-width: 900px) {
+   .column {
+     width: 50%;
+   }
+
+   .skills--img {
+      height: 240px;
     }
-}
+ }
+
+ @media screen and (max-width: 600px) {
+   .column {
+     width: 100%;
+     display: block;
+     margin-bottom: 10px;
+   }
+
+   .skills--img {
+      height: 260px;
+    }
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .column {
+     width: 100%;
+     display: block;
+     margin-bottom: 20px;
+   }
+ }
 
 .about-me {
     max-width: 1000px;
@@ -387,7 +450,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .portfolio__item {
