@@ -1,249 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Lawrence Mueller Portfolio</title>
-      <link type="text/css" rel="stylesheet" href="normalize.css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-         crossorigin="anonymous"
-      />
-      <link
-         href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-         rel="stylesheet"
-      />
 
-      <link rel="stylesheet" href="./CSS/index.css" />
-   </head>
-   <body>
-      <header>
-         <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-         </button>
-         <nav class="nav">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a href="#home" class="nav__link">Home</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#skills" class="nav__link">My Skills</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#about" class="nav__link">About me</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#work" class="nav__link">My Work</a>
-               </li>
-            </ul>
-         </nav>
-      </header>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lawrence Mueller Portfolio</title>
+   <link type="text/css" rel="stylesheet" href="normalize.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet" />
 
-      <!-- Introduction -->
-      <section class="intro" id="home">
-         <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Lawrence Mueller</strong>
-         </h1>
-         <p class="section__subtitle section__subtitle--intro">
-            Web Developer
-         </p>
-         <img
-            src="img/lawrence1.jpg"
-            alt="a picture of Jane Smith smiling"
-            class="intro__img"
-         />
-      </section>
+   <link rel="stylesheet" href="./CSS/index.css" />
+</head>
 
-      <!-- My skills -->
-      <section id="skills"> 
-         <h2 class="section__title section__title--skills">Skills</h2>
-         <div class="row">
-            <div class="column">
-              <div class="card">
-                  <div class="skills--img js"></div>
-                  <h3>JavaScript</h3>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                  <div class="skills--img react"></div>
-                  <h3>React</h3>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                  <div class="skills--img node"></div>
-                  <h3>Node</h3>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                  <div class="skills--img mongo"></div>
-                  <h3>Mongo</h3>
-              </div>
-            </div>
-
-
-            <div class="column">
-               <div class="card">
-                  <div class="skills--img aws"></div>
-                  <h3>AWS</h3>
-               </div>
-            </div>
-
-            <div class="column">
-               <div class="card">
-                  <div class="skills--img css"></div>
-                  <h3>CSS</h3>
-               </div>
-            </div>
-
-            <div class="column">
-               <div class="card">
-                  <div class="skills--img html"></div>
-                  <h3>HTML</h3>
-               </div>
-            </div>
-
-
-            <div class="column">
-               <div class="card">
-                  <div class="skills--img github"></div>
-                  <h3>GitHub</h3>
-               </div>
-            </div>
-      </section>
-
-      <!-- About me -->
-      <section class="about-me" id="about">
-         <h2 class="section__title section__title--about">Who I am</h2>
-         <p class="section__subtitle section__subtitle--about">
-            Web developer based out of Pomona.
-         </p>
-
-         <div class="about-me__body">
-            <p>
-               Graduated from California State University Long Beach with a
-               Bachelors of Computer Science. From there I started to teach
-               myself modern web technogolies such as React, Node, MongoDB, AWS
-               and more. Mainly I would watch YouTube tutorials, read medium
-               articles, and use online learning sites like Udemy. After I got
-               to a level with those technologies that I would call proficient,
-               I started to build projects in my free time and post them on my
-               GitHub.
-            </p>
-            <p>
-               Beyond just web development I have many other hobbies. Since I am
-               a huge nerd, I play Dungeons and Dragons with my friends weekly.
-               I also love music and sing in my spare time. My other passion is
-               sustainability. I believe that the climate crisis is the largest
-               problem our planet is facing at the moment and I would love to
-               find a way to use my skills as a programmer in order to help
-               towards that effort.
-            </p>
-         </div>
-
-         <img
-            src="img/lawrence2.jpg"
-            alt="Jane leaning against a bus"
-            class="about-me__img"
-         />
-      </section>
-
-      <!-- Projects -->
-      <section class="my-work" id="work">
-         <h2 class="section__title section__title--work">My Projects</h2>
-         <p class="section__subtitle section__subtitle--work"></p>
-
-         <div class="portfolio">
-            <!-- Portfolio item 01 -->
-            <a href="./Pages/messenger-service.html" class="portfolio__item">
-               <img
-                  src="img/MessageService1.png"
-                  alt="picture of my messenger service project"
-                  class="portfolio__img"
-               />
-            </a>
-
-            <!-- Portfolio item 02 -->
-            <a href="./Pages/craigslist-clone.html" class="portfolio__item">
-               <img
-                  src="img/CraigslistClone1.png"
-                  alt="picture of my messenger service project"
-                  class="portfolio__img"
-               />
-            </a>
-
-            <!-- Portfolio item 03 -->
-            <a href="./Pages/elevator-simulator.html" class="portfolio__item">
-               <img
-                  src="img/elevator1.PNG"
-                  alt="picture of my messenger service project"
-                  class="portfolio__img"
-               />
-            </a>
-
-            <!-- Portfolio item 04 -->
-            <a href="./Pages/work-flow.html" class="portfolio__item">
-               <img
-                  src="img/WorkFlow1.png"
-                  alt="picture of my Work Flow project"
-                  class="portfolio__img"
-               />
-            </a>
-
-            <!-- Portfolio item 05 -->
-            <a href="./Pages/react-quiz.html" class="portfolio__item">
-               <img
-                  src="img/Quiz1.PNG"
-                  alt="picture of my React Quiz project"
-                  class="portfolio__img"
-               />
-            </a>
-         </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-         <a href="mailto:lawrencemueller18@gmail.com" class="footer__link"
-            >lawrencemueller18@gmail.com</a
-         >
-         <ul class="social-list">
-            <li class="social-list__item">
-               <a
-                  class="social-list__link"
-                  href="https://github.com/Amalazing"
-                  target="_blank"
-               >
-                  <i class="fab fa-github"></i>
-               </a>
+<body>
+   <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+         <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="#home" class="nav__link">Home</a>
             </li>
-            <li class="social-list__item">
-               <a
-                  class="social-list__link"
-                  href="https://www.linkedin.com/in/lawrence-mueller/"
-                  target="_blank"
-               >
-                  <i class="fab fa-linkedin-in"></i>
-               </a>
+            <li class="nav__item">
+               <a href="#skills" class="nav__link">My Skills</a>
             </li>
-            <li class="social-list__item">
-               <a
-                  class="social-list__link"
-                  href="https://drive.google.com/file/d/17emZSzwoqiqsUMbOBxYWDwE7VlFNPcvH/view?usp=sharing"
-                  target="_blank"
-               >
-                  <i class="far fa-file"></i>
-               </a>
+            <li class="nav__item">
+               <a href="#about" class="nav__link">About me</a>
+            </li>
+            <li class="nav__item">
+               <a href="#work" class="nav__link">My Work</a>
             </li>
          </ul>
-      </footer>
+      </nav>
+   </header>
 
-      <script src="./JS/index.js"></script>
-   </body>
+   <!-- Introduction -->
+   <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+         Hi, I am <strong>Lawrence Mueller</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+         Web Developer
+      </p>
+      <img src="img/lawrence1.jpg" alt="a picture of Jane Smith smiling" class="intro__img" />
+   </section>
+
+   <!-- My skills -->
+   <section id="skills">
+      <h2 class="section__title section__title--skills">Skills</h2>
+      <div class="row">
+         <div class="column">
+            <div class="card">
+               <div class="skills--img js"></div>
+               <h3>JavaScript</h3>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img react"></div>
+               <h3>React</h3>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img node"></div>
+               <h3>Node</h3>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img mongo"></div>
+               <h3>Mongo</h3>
+            </div>
+         </div>
+
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img aws"></div>
+               <h3>AWS</h3>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img css"></div>
+               <h3>CSS</h3>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img html"></div>
+               <h3>HTML</h3>
+            </div>
+         </div>
+
+
+         <div class="column">
+            <div class="card">
+               <div class="skills--img github"></div>
+               <h3>GitHub</h3>
+            </div>
+         </div>
+   </section>
+
+   <!-- About me -->
+   <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+         Web developer based out of Pomona.
+      </p>
+
+      <div class="about-me__body">
+         <p>
+            Graduated from California State University Long Beach with a
+            Bachelors of Computer Science. From there I started to teach
+            myself modern web technogolies such as React, Node, MongoDB, AWS
+            and more. Mainly I would read documentation, search stack overflow,
+            and use online learning sites like Udemy. Once I was at a professional level with these technologies,
+            I started to build my own projects posting them GitHub and hosting some online.
+         </p>
+         <p>
+            Beyond just web development I have many other hobbies. Since I am
+            a huge nerd, I play Dungeons and Dragons with my friends weekly.
+            I also love music and sing in my spare time. My other passion is
+            sustainability. I believe that the climate crisis is the largest
+            problem our planet is facing at the moment and I would love to
+            find a way to use my skills as a programmer in order to help
+            towards that effort.
+         </p>
+      </div>
+
+      <img src="img/lawrence2.jpg" alt="Jane leaning against a bus" class="about-me__img" />
+   </section>
+
+   <!-- Projects -->
+   <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Projects</h2>
+      <p class="section__subtitle section__subtitle--work"></p>
+
+      <div class="portfolio">
+         <!-- Portfolio item 01 -->
+         <a href="./Pages/messenger-service.html" class="portfolio__item">
+            <img src="img/MessageService1.png" alt="picture of my messenger service project" class="portfolio__img" />
+         </a>
+
+         <!-- Portfolio item 02 -->
+         <a href="./Pages/craigslist-clone.html" class="portfolio__item">
+            <img src="img/CraigslistClone1.png" alt="picture of my messenger service project" class="portfolio__img" />
+         </a>
+
+         <!-- Portfolio item 03 -->
+         <a href="./Pages/elevator-simulator.html" class="portfolio__item">
+            <img src="img/elevator1.PNG" alt="picture of my messenger service project" class="portfolio__img" />
+         </a>
+
+         <!-- Portfolio item 04 -->
+         <a href="./Pages/work-flow.html" class="portfolio__item">
+            <img src="img/WorkFlow1.png" alt="picture of my Work Flow project" class="portfolio__img" />
+         </a>
+
+         <!-- Portfolio item 05 -->
+         <a href="./Pages/react-quiz.html" class="portfolio__item">
+            <img src="img/Quiz1.PNG" alt="picture of my React Quiz project" class="portfolio__img" />
+         </a>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <a href="mailto:lawrencemueller18@gmail.com" class="footer__link">lawrencemueller18@gmail.com</a>
+      <ul class="social-list">
+         <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/Amalazing" target="_blank">
+               <i class="fab fa-github"></i>
+            </a>
+         </li>
+         <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/lawrence-mueller/" target="_blank">
+               <i class="fab fa-linkedin-in"></i>
+            </a>
+         </li>
+         <li class="social-list__item">
+            <a class="social-list__link"
+               href="https://drive.google.com/file/d/17emZSzwoqiqsUMbOBxYWDwE7VlFNPcvH/view?usp=sharing"
+               target="_blank">
+               <i class="far fa-file"></i>
+            </a>
+         </li>
+      </ul>
+   </footer>
+
+   <script src="./JS/index.js"></script>
+</body>
+
 </html>
