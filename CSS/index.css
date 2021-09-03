@@ -448,6 +448,8 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .portfolio {
