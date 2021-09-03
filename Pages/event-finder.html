@@ -47,38 +47,51 @@
 
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        React<strong>Quiz</strong>
+        Social<strong>Pup</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        Web Application
-      </p>
-      <img src="../img/Quiz2.PNG" alt="" class="intro__img" />
+      <p class="section__subtitle section__subtitle--intro">Web Application</p>
+      <img
+        src="../img/event-finder2.png"
+        alt="picture of project home screen"
+        class="intro__img"
+      />
     </section>
 
     <div class="portfolio-item-individual">
       <p>
-        This is a quiz Web application I decided to make using React. The
-        concept is simple enough; test yourself in three categories: science,
-        history, and art.
+        A full stack web service that aims to make socializing your pet dog easy.
+        Users can find or sign up and create events where dog owners can gather
+        and let their pets socialize.
       </p>
-      <img src="../img/Quiz3.PNG" alt="" />
+      <img src="../img/events-diagram.PNG" alt="diagram of project" />
       <p>
-        I use a local JSON file in order to create all of the questions and
-        answers. It is hosted using GitHub pages and has some simple animations
-        to give it some flair. Visit the site by following the link and see how
-        high you can score.
+        The frontend of the website is built using Next.JS. This made navigating pages
+        a breeze since it removes the need to work with React Router. The main reason
+        I used Next.JS was to easily create dynamic paths. The register/login 
+        authentication is done using JWT's which are provided by the Strapi backend. I really
+        liked using the module system for css styles, holding all styles in a component or page 
+        specific module makes locating styles simple and keeps file sizes small. The maps in the 
+        event details pages were done by leveraging Google's geocoding API and Mapbox API.
+      </p>
+      <img src="../img/event-finder3.PNG" alt="picture of events page of project" class="center" />
+      <p>
+        The backend I made using Stapi. Strapi is a headless CMS that basically provides an easy 
+        way to manage routes and models for you. While I enjoyed using Strapi on this project, it 
+        was kind of weird not having to code out the models or simple routes myself. While Strapi 
+        manages a lot of the work for you, I still needed to write out the business logic of the API 
+        routes.
       </p>
     </div>
 
     <div class="project-btn-container">
       <a
-        href="https://amalazing.github.io/React-Quiz/"
+        href="https://eventfinder.vercel.app/"
         target="_blank"
         class="project-btn"
         >Visit Site</a
       >
       <a
-        href="https://github.com/Amalazing/React-Quiz"
+        href="https://github.com/Amalazing/EventFinder"
         class="project-btn"
         target="_blank"
         >Visit Code</a
