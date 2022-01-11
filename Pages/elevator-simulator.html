@@ -1,148 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lawrence Mueller Portfolio</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-            crossorigin="anonymous"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawrence Mueller Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-            rel="stylesheet"
-        />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="../CSS/index.css" />
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html#skills" class="nav__link"
-                            >Favorite Stack</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html#about" class="nav__link"
-                            >About me</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html#work" class="nav__link"
-                            >Projects</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#skills" class="nav__link">Favorite Stack</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#work" class="nav__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                Elevator<strong>Simulator</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">
-                Web Application
-            </p>
-            <img
-                src="../img/elevator2.PNG"
-                alt="picture of project home screen"
-                class="intro__img"
-            />
-        </section>
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Elevator<strong>Simulator</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Web Application</p>
+      <img
+        src="../img/elevator2.PNG"
+        alt="picture of project home screen"
+        class="intro__img"
+      />
+    </section>
 
-        <div class="portfolio-item-individual">
-            <p>
-                A web application that simulates an elevator that is proccessing
-                requests held in a queue which represents passengers on several
-                floors of a building requesting the use of the elevator.
-            </p>
-            <img src="../img/elevator3.PNG" alt="picture of project content" />
-            <p>
-                The project is built using the traditional suspects for a web
-                page: HTML, CSS, JavaScript and JQuery. Users can add passnegers
-                to a queue in any order they would like. After the queue is
-                ready simply select "start" and watch the elevator process the
-                events in the queue. The current event being processed turns
-                yellow which I implemented to improve user experience.
-            </p>
-            <p>
-                The major challenge while building this project was getting the
-                animation for each elevator movement to finish before processing
-                the next event in the queue. I ended up using a sleep method and
-                promises to pause in the middle of a recursive function that
-                iterates through the queue. Before I came up with that solution,
-                I had tried callbacks, generators, and event listeners, but
-                found little to no success. Any way please check out the project
-                through the link below.
-            </p>
-        </div>
+    <div class="portfolio-item-individual">
+      <p>
+        A web application that simulates an elevator that is proccessing
+        requests held in a queue which represents passengers on several floors
+        of a building requesting the use of the elevator.
+      </p>
+      <img src="../img/elevator3.PNG" alt="picture of project content" />
+      <p>
+        The project is built using the traditional suspects for a web page:
+        HTML, CSS, JavaScript and JQuery. Users can add passnegers to a queue in
+        any order they would like. After the queue is ready simply select
+        "start" and watch the elevator process the events in the queue. The
+        current event being processed turns yellow which I implemented to
+        improve user experience.
+      </p>
+      <p>
+        The major challenge while building this project was getting the
+        animation for each elevator movement to finish before processing the
+        next event in the queue. I ended up using a sleep method and promises to
+        pause in the middle of a recursive function that iterates through the
+        queue. Before I came up with that solution, I had tried callbacks,
+        generators, and event listeners, but found little to no success. Any way
+        please check out the project through the link below.
+      </p>
+    </div>
 
-        <div class="project-btn-container">
-            <a
-                href="https://amalazing.github.io/Elevator-Simulator/"
-                target="_blank"
-                class="project-btn"
-                >Visit Site</a
-            >
-            <a
-                href="https://github.com/Amalazing/Elevator-Simulator"
-                class="project-btn"
-                target="_blank"
-                >Visit Code</a
-            >
-        </div>
+    <div class="project-btn-container">
+      <a
+        href="https://lawrencemueller.github.io/Elevator-Simulator/"
+        target="_blank"
+        class="project-btn"
+        >Visit Site</a
+      >
+      <a
+        href="https://github.com/LawrenceMueller/Elevator-Simulator"
+        class="project-btn"
+        target="_blank"
+        >Visit Code</a
+      >
+    </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="lawrencemueller18@gmail.com" class="footer__link"
-                >lawrencemueller18@gmail.com</a
-            >
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a
-                        class="social-list__link"
-                        href="https://github.com/Amalazing"
-                        target="_blank"
-                    >
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a
-                        class="social-list__link"
-                        href="https://www.linkedin.com/in/lawrence-mueller/"
-                        target="_blank"
-                    >
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a
-                        class="social-list__link"
-                        href="https://drive.google.com/file/d/1_slUctoCTHx-jsPEK0xn7StKhOwqWPif/view?usp=sharing"
-                        target="_blank"
-                    >
-                        <i class="far fa-file"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="lawrencemueller18@gmail.com" class="footer__link"
+        >lawrencemueller18@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/LawrenceMueller"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/lawrence-mueller/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://drive.google.com/file/d/1_slUctoCTHx-jsPEK0xn7StKhOwqWPif/view?usp=sharing"
+            target="_blank"
+          >
+            <i class="far fa-file"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-        <script src="../JS/index.js"></script>
-    </body>
+    <script src="../JS/index.js"></script>
+  </body>
 </html>
