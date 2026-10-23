@@ -399,7 +399,6 @@
         height: 100%;
         border: 0;
       }
-      /* (placeholder style no longer used) */
       .video-placeholder {
         height: 100%;
         display: grid;
@@ -575,8 +574,8 @@
         <nav aria-label="Sections">
           <a class="optional" href="#about">About</a>
           <a href="#snowball">Snowball</a>
+          <a href="#consolejob">Consolejob</a>
           <a class="optional" href="#work">Work</a>
-          <a href="Lawrence_Mueller_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </nav>
       </div>
     </div>
@@ -591,13 +590,26 @@
             the good stuff
           </p>
           <div class="actions">
-            <!-- Upload your resume next to this file with exactly this name -->
-            <a class="btn primary" href="Lawrence_Mueller_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
-            <a class="btn" href="https://github.com/LawrenceMueller" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a
+              class="btn primary"
+              href="https://github.com/LawrenceMueller"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/lawrence-mueller/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
           </div>
           <p class="contact">
             Contact me:
-            <a href="mailto:lawrencemueller18@gmail.com">lawrencemueller18@gmail.com</a>
+            <a href="mailto:lawrencemueller18@gmail.com"
+              >lawrencemueller18@gmail.com</a
+            >
           </p>
         </div>
 
@@ -631,13 +643,11 @@
         </div>
       </section>
 
-      <section id="snowball">
+      <!-- <section id="snowball">
         <div class="wrap">
           <div class="project-head">
             <h2>Snowball - Recent Project</h2>
-            <p>
-              An anonymous web forum built with Go, PostgreSQL and htmx
-            </p>
+            <p>An anonymous web forum built with Go, PostgreSQL and htmx</p>
           </div>
 
           <div class="showcase">
@@ -646,39 +656,34 @@
                 <iframe
                   src="https://www.youtube-nocookie.com/embed/qePwMyWuqX0"
                   title="Snowball walkthrough"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
                   loading="lazy"
                 ></iframe>
               </figure>
               <div class="links">
-                <a href="https://github.com/LawrenceMueller/Forum" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://github.com/LawrenceMueller/Forum"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Source code on GitHub</a
                 >
                 <a
-                  href="https://github.com/LawrenceMueller/Forum/blob/master/docs/PROJECT_CONTEXT.md" target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/LawrenceMueller/Forum/blob/master/docs/PROJECT_CONTEXT.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Read the project spec</a
                 >
               </div>
-              <figure class="run" aria-label="Snowball's check script passing">
-                <div class="run-head" aria-hidden="true">
-                  <i></i><i></i><i></i><span>Snowball - test script</span>
-                </div>
-                <ol>
-                  <li class="cmd">&gt; ./scripts/check.ps1</li>
-                  <li class="ok">ok: Formatting (gofmt)</li>
-                  <li class="ok">ok: Modules are tidy</li>
-                  <li class="ok">ok: Vet</li>
-                  <li class="ok">ok: Known vulnerabilities (govulncheck)</li>
-                  <li class="ok">ok: Build</li>
-                  <li class="ok">ok: Tests (-count=1 -race)</li>
-                  <li class="done">All checks passed.</li>
-                </ol>
-                <figcaption>
-                  All tests checked on every push thanks to CI
-                </figcaption>
-              </figure>
             </div>
 
             <div class="prose">
@@ -700,17 +705,8 @@
                 grows with the project. It holds the choices I made on
                 architecture, the database schema, the rules the data has to
                 follow, and a log of every decision. Claude starts every session
-                from it. Here's a small piece of it:
+                from it.
               </p>
-              <figure class="spec">
-                <p class="h">### 7.3 Login and logout</p>
-                <blockquote>
-                  Nonexistent names run a full argon2 check against a dummy hash
-                  (<code>auth.VerifyDummy</code>) so timing doesn't reveal
-                  whether a name exists; both failures show the same message.
-                </blockquote>
-                <figcaption>From docs/PROJECT_CONTEXT.md</figcaption>
-              </figure>
             </div>
           </div>
 
@@ -741,6 +737,96 @@
               <p>
                 Load-tested against a seeded database of 100,000 posts, 1.2
                 million comments and 5.8 million votes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="consolejob">
+        <div class="wrap">
+          <div class="project-head">
+            <h2>Console.job - 2022 Project</h2>
+            <p>
+              A job board with paid listings, built with Next.js, React, Redis
+              and Stripe
+            </p>
+          </div>
+
+          <div class="showcase">
+            <div>
+              <figure class="video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/daSLAntjGuM"
+                  title="Consolejob demo"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </figure>
+              <div class="links">
+                <a
+                  href="https://github.com/LawrenceMueller/Job-Board-V2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source code on GitHub</a
+                >
+              </div>
+            </div>
+
+            <div class="prose">
+              <p>
+                console.job was my second project hosted live for the public.
+                Employers could post a job and pay for the listing with Stripe,
+                and job seekers could search by keyword or by distance from
+                where they live, then apply by email.
+              </p>
+              <p>
+                I learned more from this project than from any other: it was my
+                first time taking real payments, running scheduled jobs, and
+                working around caching on a live site. I built it with Next.js,
+                Node.js API routes and Redis, using Redis as the main database,
+                which is unusual since it’s best known for caching. Its JSON
+                documents and search indexes handled everything the site needed.
+                It’s been a few years, but I’m still proud of it.
+              </p>
+            </div>
+          </div>
+
+          <div class="features">
+            <div>
+              <h3>Search</h3>
+              <p>
+                Full-text and location-based job search using Redis indexes and
+                Google's Geocoding API.
+              </p>
+            </div>
+            <div>
+              <h3>Payments</h3>
+              <p>
+                Stripe Checkout for paid job postings, including promotion
+                codes.
+              </p>
+            </div>
+            <div>
+              <h3>Applications by email</h3>
+              <p>
+                Applications delivered straight to employers through SendGrid.
+              </p>
+            </div>
+            <div>
+              <h3>Built for phones</h3>
+              <p>
+                Mobile-responsive pages, installable as a progressive web app.
               </p>
             </div>
           </div>
@@ -783,7 +869,9 @@
           <h2>Get in touch</h2>
           <p class="contact">
             Email:
-            <a href="mailto:lawrencemueller18@gmail.com">lawrencemueller18@gmail.com</a>
+            <a href="mailto:lawrencemueller18@gmail.com"
+              >lawrencemueller18@gmail.com</a
+            >
           </p>
         </div>
         <p class="small">© 2026 Lawrence Mueller</p>
